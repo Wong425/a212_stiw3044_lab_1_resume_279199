@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Resume</title>
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: Verdana, Geneva, sans-serif;
+        }
+
+        .columnEDU {
+            float: left;
+            padding: 10px;
+            height: 250px;
+
+        }
+
+        .leftEDU {
+            width: 100%;
+        }
+
+        .column {
+            float: left;
+            padding: 10px;
+            height: 350px;
+
+        }
+
+        .columnSpace {
+            float: left;
+            width: 8%;
+            padding: 10px;
+            height: 20px;
+        }
+
+        .columnWE {
+            float: left;
+            width: 33.33%;
+            padding: 10px;
+            height: 150px;
+
+        }
+
+        .columnPro {
+            float: left;
+            padding: 10px;
+            height: 200px;
+
+
+        }
+
+        .columnSL {
+            float: left;
+            padding: 10px;
+            height: 300px;
+
+        }
+
+        .columnCon {
+            float: left;
+            padding: 10px;
+            height: 300px;
+
+        }
+
+        .left {
+            width: 40%;
+        }
+
+        .right {
+            width: 60%;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .container {
+            position: relative;
+            width: auto;
+            overflow: auto;
+            padding-top: 40%;
+        }
+
+        .responsive-iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 70%;
+            border: none;
+        }
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: auto;
+            height: auto;
+        }
+
+        table,
+        th,
+        td {
+            border-collapse: collapse;
+            text-align: left;
+            padding: 10px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #778899;
+        }
+    </style>
+
+</head>
+
+<body class="w3-white">
+    <nav class="w3-sidebar w3-blue-gray w3-collapse w3-top w3-large w3-padding"
+        style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
+            style="width:100%;font-size:12px">Close Menu</a>
+        <div class="w3-container w3-white">
+            <h3 class="w3-padding-50"><b>Resume</b></h3>
+        </div>
+        <div class="w3-bar-block">
+            <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"><i class="fa fa-id-card"></i>
+                <p>PROFILE</p>
+            </a>
+            <a href="#edu" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"><i
+                    class="fa fa-graduation-cap"></i>
+                <p>EDUCATION</p>
+            </a>
+            <a href="#we" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"><i
+                    class="fa fa-briefcase"></i>
+                <p>WORK EXPERIENCE</p>
+            </a>
+            <a href="#pro" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"><i
+                    class="fa fa-file-text"></i>
+                <p>PROJECT</p>
+            </a>
+            <a href="#inte" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"><i class="fa fa-star"></i>
+                <p>INTERESTS</p>
+            </a>
+            <a href="#sl" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"><i class="fa fa-gear"></i>
+                <p>SKILLS & <br> LANGUAGES</p>
+            </a>
+            <a href="#con" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"><i class="fa
+                fa-phone-square"></i>
+                <p>CONTACT</p>
+            </a>
+        </div>
+    </nav>
+    <header class="w3-container w3-top w3-hide-large w3-blue-gray w3-xlarge w3-padding">
+        <a href="javascript:void(0)" class="w3-button w3-blue-gray w3-margin-right" onclick="w3_open()">&#9776;</a>
+        <span>Resume</span>
+    </header>
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close menu" id="myOverlay">
+    </div>
+    <div class="w3-main" style="margin-left:320px;margin-right:40px">
+        <div class="row" style="margin-top: 70px" id="">
+            <div class="column left" style="background-color:#FFF5EE;">
+                <h2 style="text-align: center;"><b>MY PROFILE</b></h2>
+                <img src="3.jpg" class="center" style=" height: 150px; background-size: cover;border: 1px solid black;">
+                <p
+                    style="font-size: 1vw; color: black; text-align: justify; border: 3px solid #778899; background-color: white;">
+                    With over 3 years experience in sotfware development fields areas. I am looking for a challenging
+                    career opportunity for a Junior Software Engineer.</p>
+            </div>
+            <div class="column right" style="background-color:#778899">
+                <p style="color: lightgoldenrodyellow;"><b>Wong Zi Qing<br>
+                        Email: wongziqing123@gmail.com<br>
+                        Phone No: 011-12345678<br>
+                        Location:</b> </p>
+                <div class="container">
+                    <iframe class="responsive-iframe"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.576207761509!2d100.50749241477028!3d6.448417595334788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304cae152c08f777%3A0x76d78a9b0a4b933d!2sUniversiti%20Utara%20Malaysia!5e0!3m2!1sen!2smy!4v1651190309180!5m2!1sen!2smy"
+                        width="50" height="50" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="edu">
+            <div class="columnSpace" style="background-color:white;"></div>
+            <div class="columnEDU leftEDU" style=" overflow-x:auto; background-color:white; border: 3px solid black;">
+                <h2 style="text-align: center;"><i class="fa fa-graduation-cap"></i><b> EDUCATION</b></h2>
+                <table style="width: 100%;">
+                    <tr>
+                        <th>Yaer</th>
+                        <th>School</th>
+                        <th>Qualification</th>
+                    </tr>
+                    <tr>
+                        <td>2004-2006</td>
+                        <td>Tadika Rasa Sayang</td>
+                        <td>Early Childhood Education</td>
+                    </tr>
+                    <tr>
+                        <td>2007-2012</td>
+                        <td>SMK(C) Chong Ming</td>
+                        <td>UPSR</td>
+                    </tr>
+                    <tr>
+                        <td>2013-2019</td>
+                        <td>SMK SULTAN ABDUL AZIZ</td>
+                        <td>PT3/SPM/STPM</td>
+                    </tr>
+                    <tr>
+                        <td>2020-2023</td>
+                        <td>University Utara Malaysia</td>
+                        <td>B.sc Information Technology</td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+        <div class="row" id="we">
+            <h2 style="text-align: center;"><b>WORK <i class="fa fa-briefcase"></i> EXPERIENCE</b> </h2>
+            <div class="columnWE" style="background-color:white;">
+                <h3 style="font-size:2vw; text-align: center; background-color: #D3D3D3;">Joe's River Bar</h3>
+                <h4 style="font-size:1.5vw; text-align: center;">Waitress <i style='font-size:24px; color: #2496de'
+                        class='fa'>&#xf0f5;</i></h4>
+                <p style="font-size:1em; text-align: center"> JAN 2018 <i class=" fa fa-clock-o "> </i> MARCH 2018</p>
+            </div>
+            <div class=" columnWE" style="background-color:white;">
+                <h3 style="font-size:2vw; text-align: center; background-color: #D3D3D3;">Casino Genting</h3>
+                <h4 style="font-size:1.5vw; text-align: center;">Dealer <i style='font-size:24px; color: #006400'
+                        class='fa'>&#xf0d6;</i></h4>
+                <p style="font-size:1em; text-align: center"> MAY 2020 <i class=" fa fa-clock-o "> </i> JULY 2020</p>
+            </div>
+            <div class=" columnWE" style="background-color:white;">
+                <h3 style="font-size:2vw; text-align: center; background-color: #D3D3D3;">Yomie's Rice X Yogurt</h3>
+                <h4 style="font-size:1.5vw; text-align: center;">Bartender <i style='font-size:24px; color: #CD5C5C'
+                        class='fa'>&#xf0f4;</i></h4>
+                <p style="font-size:1em; text-align: center"> MAY 2020 <i class=" fa fa-clock-o "> </i> JULY 2020</p>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 20px;" id="pro">
+            <div class="columnPro left" style="background-color:#778899;">
+                <h2><b>PROJECT</b></h2>
+                <hr style="width :150px;border:3px solid black" class="w3-round">
+                <ul style="font-size:1vw; background-color: #FDF5E6; width:70%" class="w3-round">
+                    <li>Food Delivery System</li>
+                    <li>Hotel Reservation System</li>
+                    <li>Car Rental System</li>
+                </ul>
+            </div>
+            <div class="row" style="margin-top: 20px;" id="inte">
+                <div class="columnPro right" style="background-color:#FFF5EE">
+                    <h2><b>INTERESTS</b></h2>
+                    <hr style="width :190px;border:3px solid black" class="w3-round">
+                    <ul style="font: size 1em; width:50%; float: left;">
+                        <li>Hiking</li>
+                        <li>Camping</li>
+                    </ul>
+                    <ul style="font-size:1em; width:50%; float: left;">
+                        <li>Reading </li>
+                        <li>Learning</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="sl">
+            <div class="columnSpace" style="background-color:white;"></div>
+            <div class="columnSL leftEDU" style=" overflow-x:auto; background-color:white; border: 3px solid black;">
+                <h2 style="text-align: center;"><i class="fa fa-gear"></i><b> SKILLS & LANGUAGES</b></h2>
+                <ul style="font: size 1em; width:50%; float: left;">
+                    <li>MySQL <div class="w3-row">
+                            <div class="w3-col w3-amber w3-container" style="width:80%">
+                                <p></p>
+                            </div>
+                            <div class="w3-col w3-indigo w3-container" style="width:20%">
+                                <p></p>
+                            </div>
+                        </div>
+                        <br>
+                    </li>
+                    <li>Orcle Apex <div class="w3-row">
+                            <div class="w3-col w3-amber w3-container" style="width:90%">
+                                <p></p>
+                            </div>
+                            <div class="w3-col w3-indigo w3-container" style="width:10%">
+                                <p></p>
+                            </div>
+                        </div>
+                        <br>
+                    </li>
+                    <li>Java <div class="w3-row">
+                            <div class="w3-col w3-amber w3-container" style="width: 100%">
+                                <p></p>
+                            </div>
+                        </div>
+                        <br>
+                    </li>
+                    <li>Python <div class="w3-row">
+                            <div class="w3-col w3-amber w3-container" style="width:70%">
+                                <p></p>
+                            </div>
+                            <div class="w3-col w3-indigo w3-container" style="width:30%">
+                                <p></p>
+                            </div>
+                        </div>
+                        <br>
+                    </li>
+                </ul>
+                <ul style="font: size 1em; width:50%; float: left;">
+                    <li>Malay <div class="w3-row">
+                            <div class="w3-col w3-pink w3-container" style="width:80%">
+                                <p></p>
+                            </div>
+                            <div class="w3-col w3-blue w3-container" style="width:20%">
+                                <p></p>
+                            </div>
+                        </div>
+                        <br>
+                    </li>
+                    <li>English <div class="w3-row">
+                            <div class="w3-col w3-pink w3-container" style="width:80%">
+                                <p></p>
+                            </div>
+                            <div class="w3-col w3-blue w3-container" style="width:20%">
+                                <p></p>
+                            </div>
+                        </div>
+                        <br>
+                    </li>
+                    <li>Mandarin <div class="w3-row">
+                            <div class="w3-col w3-pink w3-container" style="width:100%">
+                                <p></p>
+                            </div>
+                        </div>
+                        <br>
+                    </li>
+                    <li>Cantonese <div class="w3-row">
+                            <div class="w3-col w3-pink w3-container" style="width:75%">
+                                <p></p>
+                            </div>
+                            <div class="w3-col w3-blue w3-container" style="width:25%">
+                                <p></p>
+                            </div>
+                        </div>
+                        <br>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="row" id="con">
+            <h2 style="text-align: center;"><b>CONTACT <i class="fa fa-phone-square"></i> </b> </h2>
+            <div class="columnCon leftEDU" style="background-color:#FFF5EE">
+                <form action="/action_page.php" target="_blank">
+                    <div class="w3-section">
+                        <label>Name</label>
+                        <input class="w3-input w3-border" type="text" name="Name" required>
+                    </div>
+                    <div class="w3-section">
+                        <label>Email</label>
+                        <input class="w3-input w3-border" type="text" name="Email" required>
+                    </div>
+                    <div class="w3-section">
+                        <label>Message</label>
+                        <input class="w3-input w3-border" type="text" name="Message" required>
+                    </div>
+                    <button type="submit"
+                        class="w3-button w3-block w3-padding-large w3-blue-gray w3-margin-bottom">Submit</button>
+            </div>
+        </div>
+
+    </div>
+    <div>
+
+    </div>
+    <footer class="w3-container w3-light-grey" style="margin-top:40px; padding-right: 58px; height: 100px;">
+        <p class="w3-right">Feel free to contact me via social media. <br>
+            <i class="fa fa-facebook-official w3-hover-opacity"></i>
+            <i class="fa fa-twitter w3-hover-opacity"></i>
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-linkedin-square w3-hover-opacity"></i><br>
+            Copyright WONG&copy;
+        </p>
+    </footer>
+
+    <script>
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+    </script>
+</body>
+
+
+</html>
